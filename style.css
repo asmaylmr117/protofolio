@@ -39,7 +39,7 @@ header {
     content: ''; /* إنشاء محتوى فارغ لعنصر الخط */
     display: block; /* جعله عنصر بلوك */
     width: 0; /* البداية بدون عرض */
-    height: 2px; /* سمك الخط */
+    height: 1px; /* سمك الخط */
     background: blue; /* لون الخط الأزرق */
     transition: width 0.3s; /* تأثير الانتقال لعرض الخط */
     position: absolute; /* وضع العنصر نسبةً إلى الرابط */
@@ -49,7 +49,7 @@ header {
 
 /* تأثير تمرير الماوس */
 .nav-link:hover::after {
-    width: 70%; /* عرض الخط كامل عند التمرير */
+    width: 90%; /* عرض الخط كامل عند التمرير */
 }
 .navigation a{
     color: #3a6cf4;
