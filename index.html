@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Mostafa Alanani</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">MOSTAFA_ALANANI</a>
+        <nav class="navigation">
+            <a href="#services" class="nav-link"> About Me</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact"  class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div>
+            <h2 id="typing-text">Hello, I'm Mostafa <br></h2>
+            <h4>Full stack developer</h4>
+            <h3>I create complete and advanced<br> websites with the latest modern technologies</h3>
+            <a href="#projects" class="main-btn">View my work</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mostafa-enany-657228259?trk=contact-info"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/mostafa.enani.71"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mostafa_alanani?igsh=YzljYTk1ODg3Zg=="><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/asmaylmr117"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    
+
+<script>
+    
+document.addEventListener("DOMContentLoaded", function() {
+    const text = "Hello, I'm Mostafa";
+    const typingElement = document.getElementById('typing-text');
+    let index = 0;
+    let isDeleting = false;
+
+    function type() {
+        if (isDeleting) {
+            if (index > 0) {
+                index--;
+                typingElement.innerHTML = text.slice(0, index) ;
+            } else {
+                isDeleting = false;
+                setTimeout(type, 500); // تأخير قبل البدء في الكتابة مرة أخرى
+                return;
+            }
+        } else {
+            if (index < text.length) {
+                typingElement.innerHTML = text.slice(0, index + 1) ;
+                index++;
+            } else {
+                isDeleting = true;
+                setTimeout(type, 1000); // تأخير قبل البدء في المسح
+                return;
+            }
+        }
+        setTimeout(type, 100); // سرعة الكتابة والمسح
+    }
+    type();
+});
+
+    </script>
+    
+    <section class="cards" id="services">
+        <h2 class="title">About Me</h2>
+        <p>I'am Mostafa Alanani, I create complete and advanced websites with the latest modern technologies.<br>
+        The techniques used in my projects:</p>
+        <p>1- front end :</p>
+        <div class="tech-icons">
+            <div class="tech-item">
+                <img src="html.png" alt="HTML" class="icon">
+                <p>HTML</p>
+            </div>
+            <div class="tech-item">
+                <img src="css.png" alt="CSS" class="icon">
+                <p>CSS</p>
+            </div>
+            <div class="tech-item">
+                <img src="bootstrap.png" alt="Bootstrap" class="icon">
+                <p>Bootstrap</p>
+            </div>
+            <div class="tech-item">
+                <img src="tailwind.png" alt="Tailwind " class="icon">
+                <p> Tailwind </p>
+            </div>
+            <div class="tech-item">
+                <img src="react.png" alt="React" class="icon">
+                <p>React</p>
+            </div>
+        </div>
+        <p>2- back end :</p>
+        <div class="tech-icons">
+            <div class="tech-item">
+                <img src="node.png" alt="Node.js" class="icon">
+                <p>Node.js ,Express.js </p>
+            </div>
+                <div class="tech-item">
+                <img src="mongodb.png" alt="MongoDB Atlas" class="icon">
+                <p>MongoDB Atlas</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="quiz.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                       <span>Quiz.app</span>
+                        <a href="https://quiz-front-gules.vercel.app/" class="more-details">Visit</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image.png" />
+                </div>
+                <div class="project-info">
+                <strong class="project-title">
+                        <span>calculator</span>
+                        <a href="https://asmaylmr117.github.io/calculator.-final/" class="more-details">Visit</a>
+                    </strong>
+                </div>
+            </div>
+          
+    <section class="cards contact" id="contact">
+        <h2 class="title">Let's work together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                  <a href="href=tel:+20155884327"> <i class="fas fa-phone"></i></a>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+201558843827</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <a href="mailto:asmaylmr117@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>asmaylmr117@gmail.com</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                   <a href="https://wa.me/+201066915691"><i class="fab fa-whatsapp"></i></a> 
+                </div>
+                <div class="info">
+                    <h3>whatsapp</h3>
+                    <p>+201066915691</p>
+                </div>
+                 </div>
+                 <div class="card">
+                    <div class="icon">
+                       <a href="https://t.me/asmaylmr"><i class="fab fa-telegram"></i></a> 
+                    </div>
+                    <div class="info">
+                        <h3>Telegram</h3>
+                        <p>asmaylmr</p>
+                    </div>
+                </div>
+        </div>
+        
+    
+</body>
+</html>
