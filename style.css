@@ -79,7 +79,13 @@ section {
     background-position: center;
     background-attachment: fixed;
 }
-
+.profile-image {
+    width: 150px; /* تغيير الحجم حسب الحاجة */
+    height: auto;
+    margin-left: auto;
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    object-fit: cover; /* لتناسب الصورة داخل العنصر */
+}
 .main h2 {
     color: #fff;
     font-size: 2em;
