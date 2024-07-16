@@ -10,7 +10,7 @@
 
 
 header {
-    background-color: #ebdbdbef;
+    background-color: #1c1fcfef;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -22,7 +22,7 @@ header {
 
 .logo{
     text-decoration: none;
-    color: #3a6cf4;
+    color: #eceff7;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
@@ -32,6 +32,7 @@ header {
     text-decoration: none; /* إزالة التسطير الافتراضي */
     position: relative; /* للسماح بوضع العناصر نسبةً إلى العنصر نفسه */
     padding-bottom: 2px; /* إضافة مسافة أسفل النص لعرض الخط بشكل جميل */
+   
 }
 
 /* الخط السفلي عند تمرير الماوس */
@@ -40,7 +41,7 @@ header {
     display: block; /* جعله عنصر بلوك */
     width: 0; /* البداية بدون عرض */
     height: 1px; /* سمك الخط */
-    background: blue; /* لون الخط الأزرق */
+    background: rgb(219, 219, 228); /* لون الخط الأزرق */
     transition: width 0.3s; /* تأثير الانتقال لعرض الخط */
     position: absolute; /* وضع العنصر نسبةً إلى الرابط */
     bottom: 0; /* وضع العنصر في أسفل الرابط */
@@ -52,7 +53,7 @@ header {
     width: 90%; /* عرض الخط كامل عند التمرير */
 }
 .navigation a{
-    color: #3a6cf4;
+    color: #d9dce4;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -60,7 +61,7 @@ header {
 }
 
 .navigation a:hover{
-    color: #601cfc;
+    color: #f0edf7;
 }
 
 section {
@@ -74,7 +75,7 @@ section {
     
     align-items: center;
     background-color: #000;
-    /*background: url(images/background.jpeg) no-repeat;*/
+  background: url(tecno.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -328,3 +329,5 @@ section {
      
     }
 }
+
+
