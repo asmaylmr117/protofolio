@@ -330,4 +330,15 @@ section {
     }
 }
 
+.pointer {
+    position: absolute;
+    width: 35px; /* أو أي حجم يناسبك */
+    top: 40px; /* اضبط القيم حسب التصميم */
+    left: 120px; /* اضبط القيم حسب التصميم */
+}
+
+.card {
+    position: relative;
+    padding-left: 50px; /* لضبط المسافة من اليسار لتناسب الأيقونة */
+}
 
