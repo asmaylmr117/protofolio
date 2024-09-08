@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+   
     <title>Mostafa Alanani</title>
+    
 </head>
-
 <body>
 
     <header>
         <a href="#" class="logo">MOSTAFA_ALANANI</a>
         <nav class="navigation">
-            <a href="#services" class="nav-link"> About Me</a>
-            <a href="#projects" class="nav-link"> Projects</a>
+            <a href="#services" class="nav-link">About Me</a>
+            <a href="#projects" class="nav-link">Projects</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
     </header>
@@ -29,19 +29,15 @@
             <h3>I create complete and advanced<br> websites with the latest modern technologies</h3>
             <a href="#projects" class="main-btn">View my work</a>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/mostafa-enany-657228259?trk=contact-info"><i
-                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/mostafa-enany-657228259?trk=contact-info"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.facebook.com/mostafa.enani.71"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/mostafa_alanani?igsh=YzljYTk1ODg3Zg=="><i
-                        class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/mostafa_alanani?igsh=YzljYTk1ODg3Zg=="><i class="fab fa-instagram"></i></a>
                 <a href="https://github.com/asmaylmr117"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
 
-
-    <script>
-
+    <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function () {
             const text = "Hello, I'm Mostafa";
             const typingElement = document.getElementById('typing-text');
@@ -72,12 +68,35 @@
             }
             type();
         });
+        
+        
+        function sendMail() {
+var params = {
+firstname: document.getElementById("firstName").value,
+lastname: document.getElementById("lastName").value,
+email: document.getElementById("email").value,
+phone: document.getElementById("phone").value,
+message: document.getElementById("message").value,
+ };
+const serviceID = "service_fntae4y";
+const templateID = "template_s9xwcyf";
+emailjs.send(serviceID, templateID, params)
+.then(res=>{
+document.getElementById("contact-your-name-2").value = "";
+document.getElementById("contact-email-2").value = "";
+document.getElementById("contact-message-2").value ="";
+console.log(res);
+alert("Your message sent successfully!!")
+})
+.catch(err=>console.log(err));
+        }
 
+   
     </script>
 
     <section class="cards" id="services">
         <h2 class="title">About Me</h2>
-        <p>I'am Mostafa Alanani, I create complete and advanced websites with the latest modern technologies.<br>
+        <p>I'm Mostafa Alanani, I create complete and advanced websites with the latest modern technologies.<br>
             The techniques used in my projects:</p>
         <p>1- front end :</p>
         <div class="tech-icons">
@@ -95,7 +114,7 @@
             </div>
             <div class="tech-item">
                 <img src="tailwind.PNG" alt="Tailwind " class="icon">
-                <p> Tailwind </p>
+                <p>Tailwind</p>
             </div>
             <div class="tech-item">
                 <img src="react.PNG" alt="React" class="icon">
@@ -106,7 +125,7 @@
         <div class="tech-icons">
             <div class="tech-item">
                 <img src="node.PNG" alt="Node.js" class="icon">
-                <p>Node.js ,Express.js </p>
+                <p>Node.js, Express.js</p>
             </div>
             <div class="tech-item">
                 <img src="mongodb.PNG" alt="MongoDB Atlas" class="icon">
@@ -118,7 +137,6 @@
     <section class="projects" id="projects">
         <h2 class="title">My projects</h2>
         <div class="content">
-            
             <div class="project-card">
                 <div class="project-image">
                     <img src="gana.PNG" />
@@ -150,7 +168,6 @@
                 <div class="project-info">
                     <strong class="project-title">
                         <span>Ecommerce Topico</span>
-                        <a href="https://github.com/asmaylmr117/eco.front-"><i class="fab fa-github" id="git"></i></a>
                         <a href="https://eco-front-brown.vercel.app/" class="more-details">Visit</a>
                     </strong>
                 </div>
@@ -168,6 +185,7 @@
                     </strong>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="cards contact" id="contact">
@@ -177,7 +195,6 @@
                 <div class="card">
                     <div class="icon">
                         <a href="tel:+20155884327">
-
                             <i class="fas fa-phone"></i>
                         </a>
                     </div>
@@ -195,7 +212,7 @@
                         </a>
                     </div>
                     <div class="info">
-                        <h3>whatsapp</h3>
+                        <h3>WhatsApp</h3>
                         <p>+201066915691</p>
                     </div>
                 </div>
@@ -210,7 +227,7 @@
                     </div>
                     <div class="info">
                         <h3>Email</h3>
-                        <p>asmaylmr117@gmail</p>
+                        <p>asmaylmr117@gmail.com</p>
                     </div>
                 </div>
                 <div class="card">
@@ -227,8 +244,38 @@
                 </div>
             </div>
         </div>
+        <br></br>
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                   <button onclick="sendMail" id="sendButton">Send Message</button>
+                <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                <script type="text/javascript">
+                    emailjs.init('KtUtpB7S6MK0vfZaL'); // تأكد من أن هذا هو المفتاح العام الصحيح
+                </script>
+               
+            </form>
+        </div>
     </section>
-
+    
 </body>
-
 </html>
