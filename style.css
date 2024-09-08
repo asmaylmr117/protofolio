@@ -360,6 +360,57 @@ section {
 background-color: #6c6ceb;
 
 }
+/* تنسيق الحاوية الأساسية للفورم */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #070575;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق الحقول */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: white; /* جعل اللون أبيض */
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white; /* جعل المدخل أبيض */
+    font-size: 14px;
+    color: #333;
+}
+
+/* تنسيق الزر */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: green; /* جعل لون الزر أخضر */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen; /* تأثير hover على الزر */
+}
+
+  
+  
 
   
   
