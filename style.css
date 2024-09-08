@@ -75,7 +75,7 @@ section {
     
     align-items: center;
     background-color: #000;
-  background: url(blue-spiral.gif) no-repeat;
+  background: url(tecno.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -213,6 +213,11 @@ section {
     background-size: 100% 100%; /* تكبير طول وعرض الخلفية إلى 200% */
     background-position: center; /* جعل الخلفية في المنتصف */
 }
+.contact {
+    background-color: rgb(4, 2, 32);
+    background-size: 100% 100%; /* تكبير طول وعرض الخلفية إلى 200% */
+    background-position: center; /* جعل الخلفية في المنتصف */
+}
 
 .projects .content{
     margin-top: 30px;
@@ -257,6 +262,12 @@ section {
     font-weight: 800;
     margin-top: 10px;
 }
+  
+
+
+
+
+
 
 .more-details {
     text-decoration: none;
@@ -345,4 +356,10 @@ section {
     position: relative;
     padding-left: 50px; /* لضبط المسافة من اليسار لتناسب الأيقونة */
 }
+#git:hover {
+background-color: #6c6ceb;
 
+}
+
+  
+  
