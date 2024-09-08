@@ -268,10 +268,16 @@ alert("Your message sent successfully!!")
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
                    <button onclick="sendMail" id="sendButton">Send Message</button>
-                <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-                <script type="text/javascript">
-                    emailjs.init('KtUtpB7S6MK0vfZaL'); // تأكد من أن هذا هو المفتاح العام الصحيح
-                </script>
+                <script type="text/javascript"
+                   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+           </script>
+           <script type="text/javascript">
+              (function(){
+                 emailjs.init({
+                   publicKey: "KtUtpB7S6MK0vfZaL",
+                 });
+              })();
+           </script>
                
             </form>
         </div>
