@@ -72,24 +72,16 @@ section {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    
-    align-items: center;
+    align-items: flex-end; /* تعديل هذه الخاصية */
+    justify-content: center; /* تعديل هذه الخاصية إذا لزم الأمر */
     background-color: #000;
-  background: url(  person-playing-3d-video-games-device.jpg) no-repeat;
-) no-repeat;
+    background: url(person-playing-3d-video-games-device.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding-bottom: 20px; /* إضافة هذه الخاصية لتحريك العناصر لأسفل */
 }
-.profile-image {
-    width: 180px; /* تغيير الحجم حسب الحاجة */
-    height: auto;
-    margin-left: auto;
-    border-radius: 50%; /* لجعل الصورة دائرية */
-    object-fit: cover; /* لتناسب الصورة داخل العنصر */
-    border: 4px dotted #0000ff; /* حدود منقطة باللون الأزرق */
-    box-shadow: 0 0 10px 3px rgba(0, 0, 255, 0.5); /* تأثير مضيء باللون الأزرق */
-}
+
 .main h2 {
     color: #ffffff;
     font-size: 2em;
@@ -99,7 +91,7 @@ section {
 .main h4  {
     display: inline-block;
     margin-top: 10px;
-    color: #0574fc;
+    color: #97e984dc;
     font-size: 2em;
     font-weight: bold;
 }
@@ -417,8 +409,6 @@ button:hover {
 
 
   }
-  
-
   
     
   
