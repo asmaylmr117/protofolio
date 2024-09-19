@@ -91,9 +91,10 @@ section {
 .main h4  {
     display: inline-block;
     margin-top: 10px;
-    color: #97e984dc;
+    color: #3613ff;
     font-size: 2em;
-    font-weight: bold;
+    font-weight: 600;
+    background-color: rgb(12, 13, 70); /* إضافة لون الخلفية الأحمر */
 }
 
 .main h3 {
