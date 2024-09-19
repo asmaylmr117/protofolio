@@ -78,7 +78,7 @@ section {
     background: url(person-playing-3d-video-games-device.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     padding-bottom: 20px; /* إضافة هذه الخاصية لتحريك العناصر لأسفل */
 }
 
