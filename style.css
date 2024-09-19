@@ -75,7 +75,7 @@ section {
     
     align-items: center;
     background-color: #000;
-  background: url(web.webp) no-repeat;
+  background: url(web.WebP) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
