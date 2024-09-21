@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-   
+
     <title>Mostafa Alanani</title>
-    
+
 </head>
+
 <body>
 
     <header>
@@ -24,13 +26,15 @@
 
     <section class="main">
         <div>
-          
+
             <h2 id="typing-text">Hello, I'm Mostafa <br></h2>
             <h4>Front end developer</h4>
             <h3>I create complete and advanced websites <br> with the latest modern technologies.</h3>
             <a href="#projects" class="main-btn">View my work</a>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/mostafa-ismail-alanani-657228259/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BsEHEwNQfQwaEwJnzMlv0Bw%3D%3D"><i class="fab fa-linkedin"></i></a>
+                <a
+                    href="https://www.linkedin.com/in/mostafa-ismail-alanani-657228259/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BsEHEwNQfQwaEwJnzMlv0Bw%3D%3D"><i
+                        class="fab fa-linkedin"></i></a>
                 <a href="https://www.facebook.com/mostafa.enani.71"><i class="fab fa-facebook"></i></a>
                 <a href="https://wa.me/+201066915691"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://github.com/asmaylmr117"><i class="fab fa-github"></i></a>
@@ -69,107 +73,108 @@
             }
             type();
         });
-        
-        
+
+
         function sendMail(event) {
-    event.preventDefault(); // لمنع تحديث الصفحة
-    var params = {
-        firstName: document.getElementById("firstName").value,
-        lastName: document.getElementById("lastName").value,
-        email: document.getElementById("email").value,
-        phone: document.getElementById("phone").value,
-        message: document.getElementById("message").value,
-    };
+            event.preventDefault(); // لمنع تحديث الصفحة
+            var params = {
+                firstName: document.getElementById("firstName").value,
+                lastName: document.getElementById("lastName").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value,
+                message: document.getElementById("message").value,
+            };
 
-    console.log(params); // تحقق من القيم
+            console.log(params); // تحقق من القيم
 
-    const serviceID = "service_fntae4y";
-    const templateID = "template_s9xwcyf";
+            const serviceID = "service_fntae4y";
+            const templateID = "template_s9xwcyf";
 
-    emailjs.send(serviceID, templateID, params)
-        .then(res => {
-            document.getElementById("firstName").value = "";
-            document.getElementById("lastName").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("phone").value = "";
-            document.getElementById("message").value = "";
-            console.log(res);
-            alert("Your message sent successfully!!");
-        })
-        .catch(err => console.log(err));
-}
+            emailjs.send(serviceID, templateID, params)
+                .then(res => {
+                    document.getElementById("firstName").value = "";
+                    document.getElementById("lastName").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("phone").value = "";
+                    document.getElementById("message").value = "";
+                    console.log(res);
+                    alert("Your message sent successfully!!");
+                })
+                .catch(err => console.log(err));
+        }
 
-   
+
     </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-<section class="cardss" id="services" data-aos="fade-up">
-    <h2 class="title">About Me</h2>
-    <p>I'm Mostafa Alanani, I create complete and advanced <br>websites with the latest modern technologies.<br>
-        The techniques used in my projects:</p>
-    <p>1- front end :</p>
-    <div class="tech-icons">
-        <div class="tech-item" data-aos="fade-right">
-            <img src="icons8-html-48.PNG" alt="HTML" class="icon">
-            <p>HTML</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <section class="cardss" id="services" data-aos="fade-up">
+        <h2 class="title">About Me, Skills</h2>
+        <p>I'm Mostafa Alanani, I create complete and advanced <br>websites with the latest modern technologies.<br>
+            The techniques used in my projects:</p>
+        <p>1- front end :</p>
+        <div class="tech-icons">
+            <div class="tech-item" data-aos="fade-right">
+                <img src="icons8-html-48.PNG" alt="HTML" class="icon">
+                <p>HTML</p>
+            </div>
+            <div class="tech-item" data-aos="fade-right" data-aos-delay="100">
+                <img src="icons8-css-48.PNG" alt="CSS" class="icon">
+                <p>CSS</p>
+            </div>
+            <div class="tech-item" data-aos="fade-right" data-aos-delay="200">
+                <img src="JAVA.png" alt="Bootstrap" class="icon">
+                <p>javascript</p>
+            </div>
+            <div class="tech-item" data-aos="fade-right" data-aos-delay="300">
+                <img src="icons8-bootstrap-100.PNG" alt="Bootstrap" class="icon">
+                <p>Bootstrap</p>
+            </div>
+            <div class="tech-item" data-aos="fade-right" data-aos-delay="400">
+                <img src="icons8-tailwindcss-48.PNG" alt="Tailwind" class="icon">
+                <p>Tailwind</p>
+            </div>
+            <div class="tech-item" data-aos="fade-right" data-aos-delay="500">
+                <img src="react.PNG" alt="React" class="icon">
+                <p>React</p>
+            </div>
+            <div class="tech-item" data-aos="fade-right" data-aos-delay="600">
+                <img src="icons8-redux-an-open-source-javascript-library-for-managing-application-state-24.png"
+                    alt="Redux" class="icon">
+                <p>Redux</p>
+            </div>
         </div>
-        <div class="tech-item" data-aos="fade-right" data-aos-delay="100">
-            <img src="icons8-css-48.PNG" alt="CSS" class="icon">
-            <p>CSS</p>
+        <br></br>
+        <p>2- back end :</p>
+        <div class="tech-icons">
+            <div class="tech-item" data-aos="fade-left">
+                <img src="node.PNG" alt="Node.js" class="icon">
+                <p>Node.js, Express.js</p>
+            </div>
+            <div class="tech-item" data-aos="fade-left" data-aos-delay="100">
+                <img src="mongodb.PNG" alt="MongoDB Atlas" class="icon">
+                <p>MongoDB Atlas</p>
+            </div>
         </div>
-        <div class="tech-item" data-aos="fade-right" data-aos-delay="200">
-            <img src="JAVA.png" alt="Bootstrap" class="icon">
-            <p>javascript</p>
-        </div>
-        <div class="tech-item" data-aos="fade-right" data-aos-delay="300">
-            <img src="icons8-bootstrap-100.PNG" alt="Bootstrap" class="icon">
-            <p>Bootstrap</p>
-        </div>
-        <div class="tech-item" data-aos="fade-right" data-aos-delay="400">
-            <img src="icons8-tailwindcss-48.PNG" alt="Tailwind" class="icon">
-            <p>Tailwind</p>
-        </div>
-        <div class="tech-item" data-aos="fade-right" data-aos-delay="500">
-            <img src="react.PNG" alt="React" class="icon">
-            <p>React</p>
-        </div>
-        <div class="tech-item" data-aos="fade-right" data-aos-delay="600">
-            <img src="icons8-redux-an-open-source-javascript-library-for-managing-application-state-24.png" alt="Redux" class="icon">
-            <p>Redux</p>
-        </div>
-    </div>
-    <br></br>
-    <p>2- back end :</p>
-    <div class="tech-icons">
-        <div class="tech-item" data-aos="fade-left">
-            <img src="node.PNG" alt="Node.js" class="icon">
-            <p>Node.js, Express.js</p>
-        </div>
-        <div class="tech-item" data-aos="fade-left" data-aos-delay="100">
-            <img src="mongodb.PNG" alt="MongoDB Atlas" class="icon">
-            <p>MongoDB Atlas</p>
-        </div>
-    </div>
-</section>
+    </section>
 
     <section class="projects" id="projects">
         <h2 class="title">My projects</h2>
         <div class="content">
-            <div class="project-card" data-aos="fade-right" >
+            <div class="project-card" data-aos="fade-right">
                 <div class="project-image">
                     <img src="gana.PNG" />
                 </div>
                 <div class="project-info">
                     <strong class="project-title">
                         <span>الطريق الى الجنه</span>
-                        <a href="https://github.com/asmaylmr117/GANA."><i class="fab fa-github" id="git"></i></a>
-                        <a href="https://gana-2fau.vercel.app/" class="more-details">Visit</a>
+                        <a href="https://github.com/asmaylmr117/gana"><i class="fab fa-github" id="git"></i></a>
+                        <a href="https://asmaylmr117.github.io/gana/" class="more-details">Visit</a>
                     </strong>
                 </div>
             </div>
-            <div class="project-card" data-aos="fade-right" >
+            <div class="project-card" data-aos="fade-right">
                 <div class="project-image">
                     <img src="eco.PNG" />
                 </div>
@@ -181,7 +186,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card" data-aos="fade-right" >
+            <div class="project-card" data-aos="fade-right">
                 <div class="project-image">
                     <img src="Pioc.PNG" />
                 </div>
@@ -193,7 +198,21 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card" data-aos="fade-right" >
+
+            <div class="project-card" data-aos="fade-right">
+                <div class="project-image">
+                    <img src="REST.PNG" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                        <span>Resturant</span>
+                        <a href="https://github.com/asmaylmr117/resturant/"><i class="fab fa-github" id="git"></i></a>
+                        <a href="https://resturant-six-phi.vercel.app/" class="more-details">Visit</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-right">
                 <div class="project-image">
                     <img src="quiz.PNG" />
                 </div>
@@ -267,7 +286,7 @@
         </div>
         <br></br>
         <div class="form-container">
-            <form id="contactForm"onsubmit="sendMail(event)">
+            <form id="contactForm" onsubmit="sendMail(event)">
                 <div class="form-group">
                     <label for="firstName">First Name:</label>
                     <input type="text" id="firstName" name="firstName" required />
@@ -288,21 +307,21 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
-                   <button type="submit" id="sendButton">Send Message</button>
-                   <script type="text/javascript"
-                   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-           </script>
-           <script type="text/javascript">
-              (function(){
-                 emailjs.init({
-                   publicKey: "KtUtpB7S6MK0vfZaL",
-                 });
-              })();
-           </script>
-               
+                <button type="submit" id="sendButton">Send Message</button>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+                </script>
+                <script type="text/javascript">
+                    (function () {
+                        emailjs.init({
+                            publicKey: "KtUtpB7S6MK0vfZaL",
+                        });
+                    })();
+                </script>
+
             </form>
         </div>
     </section>
-    
+
 </body>
+
 </html>
