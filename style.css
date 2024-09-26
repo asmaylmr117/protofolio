@@ -80,10 +80,11 @@ section {
     background-position: center;
     background-attachment: scroll;
     padding-bottom: 20px; /* إضافة هذه الخاصية لتحريك العناصر لأسفل */
+
 }
 
 .main h2 {
-    color: #ffffff;
+    color: #faececfb;
     font-size: 2em;
     font-weight: bold;
 }
@@ -95,6 +96,7 @@ section {
     font-size: 2em;
     font-weight: 600;
     background-color: rgb(12, 13, 70); /* إضافة لون الخلفية الأحمر */
+
 }
 
 .main h3 {
@@ -410,6 +412,18 @@ button:hover {
 
 
   }
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: #4f1ae4;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
   
     
   
