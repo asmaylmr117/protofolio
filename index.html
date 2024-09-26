@@ -26,54 +26,56 @@
 
     <section class="main">
         <div>
-
-            <h2 id="typing-text">Hello, I'm Mostafa <br></h2>
-            <h4>Front end developer</h4>
+            <h2>Hello, I'm Mostafa <br></h2>
+            <h4 id="typing-text"><span class="cursor">|</span></h4>
             <h3>I create complete and advanced websites <br> with the latest modern technologies.</h3>
             <a href="#projects" class="main-btn">View my work</a>
             <div class="social-icons">
-                <a
-                    href="https://www.linkedin.com/in/mostafa-ismail-alanani-657228259/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BsEHEwNQfQwaEwJnzMlv0Bw%3D%3D"><i
-                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/mostafa-ismail-alanani-657228259/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BsEHEwNQfQwaEwJnzMlv0Bw%3D%3D"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.facebook.com/mostafa.enani.71"><i class="fab fa-facebook"></i></a>
                 <a href="https://wa.me/+201066915691"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://github.com/asmaylmr117"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
-
+    
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function () {
-            const text = "Hello, I'm Mostafa";
+            const texts = ["Full stack web Developer", "Software Engineer"];
             const typingElement = document.getElementById('typing-text');
-            let index = 0;
+            let textIndex = 0;
+            let charIndex = 0;
             let isDeleting = false;
-
+            const typingSpeed = 100;
+            const deletingSpeed = 50;
+    
             function type() {
+                const currentText = texts[textIndex];
                 if (isDeleting) {
-                    if (index > 0) {
-                        index--;
-                        typingElement.innerHTML = text.slice(0, index);
+                    if (charIndex > 0) {
+                        charIndex--;
+                        typingElement.innerHTML = currentText.slice(0, charIndex) + '<span class="cursor">|</span>';
                     } else {
                         isDeleting = false;
+                        textIndex = (textIndex + 1) % texts.length;
                         setTimeout(type, 500); // تأخير قبل البدء في الكتابة مرة أخرى
                         return;
                     }
                 } else {
-                    if (index < text.length) {
-                        typingElement.innerHTML = text.slice(0, index + 1);
-                        index++;
+                    if (charIndex < currentText.length) {
+                        typingElement.innerHTML = currentText.slice(0, charIndex + 1) + '<span class="cursor">|</span>';
+                        charIndex++;
                     } else {
                         isDeleting = true;
                         setTimeout(type, 1000); // تأخير قبل البدء في المسح
                         return;
                     }
                 }
-                setTimeout(type, 100); // سرعة الكتابة والمسح
+                setTimeout(type, isDeleting ? deletingSpeed : typingSpeed); // سرعة الكتابة والمسح
             }
             type();
         });
-
+    
 
         function sendMail(event) {
             event.preventDefault(); // لمنع تحديث الصفحة
@@ -209,6 +211,19 @@
                         <span>Resturant</span>
                         <a href="https://github.com/asmaylmr117/resturant/"><i class="fab fa-github" id="git"></i></a>
                         <a href="https://resturant-six-phi.vercel.app/" class="more-details">Visit</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-right">
+                <div class="project-image">
+                    <img src="ddd.PNG" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                        <span>Dashboard Admin</span>
+                        <a href="https://github.com/asmaylmr117/Dashboard-Admin"><i class="fab fa-github" id="git"></i></a>
+                        <a href="https://dashboard-admin-wine.vercel.app/" class="more-details">Visit</a>
                     </strong>
                 </div>
             </div>
